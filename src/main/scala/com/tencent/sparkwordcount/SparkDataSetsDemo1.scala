@@ -27,5 +27,6 @@ object SparkDataSetsDemo1 {
   // 定义样例类
   // DEST_COUNTRY_NAME , ORIGIN_COUNTRY_NAME , count
   case class Flight(DEST_COUNTRY_NAME:String,ORIGIN_COUNTRY_NAME:String,count:BigInt)
+
 }
 
