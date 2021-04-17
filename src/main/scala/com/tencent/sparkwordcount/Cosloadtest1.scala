@@ -28,13 +28,13 @@ object Cosloadtest1 {
 //    df.show()
 //    val rows: Array[Row] = df.collect()
 //    df.filter(col("reason") =!= "").select(get_json_object(col("extra"), "$.req.url") as "url")
-//val url: DataFrame = df.select(when(col("reason") === "", get_json_object(col("extra"), "$.req.url") as "url").otherwise(""))
+//    val url: DataFrame = df.select(when(col("reason") === "", get_json_object(col("extra"), "$.req.url") as "url").otherwise(""))
     df.select(get_json_object(col("extra"), "$.req.url")).show()
-//    url.show()
+
 
   }
 
   case class CosLoad(log_id:String,bucket_id:String,bucket:String,appid:String,uin:String,cos_type:String,status:String,path:String,
                      user:String,	reason:String	,op:String,	source:String	,extra:String	,log_created:String)
-//    bucket_id	bucket	appid	uin	type	status	path	user	reason	op	source	extra	log_created)
+
 }

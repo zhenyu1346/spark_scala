@@ -10,7 +10,6 @@ import org.apache.spark.sql.functions._
  * @author 欧振宇
  * @since 2020/11/14 10:19
  * @version 1.0
- * Copyright (c) 2020/11/14, 作者版权所有.
  */
 object SparkDemo1 {
   def main(args: Array[String]): Unit = {
@@ -28,6 +27,7 @@ object SparkDemo1 {
 //      .csv("hdfs://ns1/data/spark_test/csv/2015-summary.csv")
 //    ds.sort($"col1", $"col2".desc)
 //    flightData2015.sort("count")
+
     // 创建临时表
     // DEST_COUNTRY_NAME , ORIGIN_COUNTRY_NAME , count
     flightData2015.createOrReplaceTempView("tmp_table")
