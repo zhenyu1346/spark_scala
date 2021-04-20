@@ -80,11 +80,19 @@
             <version>3.8.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
         <!--scala待编译的文件目录-->
-        <sourceDirectory>src/main/scala</sourceDirectory>
+        <sourceDirectory>src/main/java</sourceDirectory>
 <!--        <testSourceDirectory>src/test/scala</testsourceDirectory>-->
 
         <plugins>
