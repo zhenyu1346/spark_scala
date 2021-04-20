@@ -2,8 +2,8 @@ package com.tencent.sparkwordcount
 
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.functions.{col, explode, monotonically_increasing_id, split}
-import org.apache.spark.sql.{DataFrame, Dataset, Row, SaveMode, SparkSession}
+import org.apache.spark.sql.{DataFrame, SparkSession}
+
 
 /**
  * @author 欧振宇
