@@ -32,7 +32,6 @@ object SparkWriteCsv {
     result.coalesce(1)
       .write.mode(SaveMode.Overwrite)
       .format("com.databricks.spark.csv")
-      //      .format("orc")
       .save("C:\\Users\\31343\\Desktop\\domain_flow")
 
     result.show()
