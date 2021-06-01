@@ -19,7 +19,7 @@ object SparkReadJson {
 
     val sc: SparkContext = spark.sparkContext
 
-    val lines: RDD[String] = sc.textFile("C:\\Users\\31343\\Desktop\\mb_board")
+    val lines: RDD[String] = sc.textFile("")
 
     val line: RDD[MeetBord] = lines.map(x => x.split("\t")).map(x => MeetBord(x(0)))
 
@@ -32,13 +32,9 @@ object SparkReadJson {
     result.coalesce(1)
       .write.mode(SaveMode.Overwrite)
       .format("com.databricks.spark.csv")
-      .save("C:\\Users\\31343\\Desktop\\meet_bord")
+      .save("")
 
     result.show()
-
-
-
-
   }
 
   case class MeetBord(Content:String)
