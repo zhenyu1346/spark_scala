@@ -1,4 +1,4 @@
-package com.tencent.sparkwordcount
+package com.zhenyu.sparkwordcount
 
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD

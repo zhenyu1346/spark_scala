@@ -1,5 +1,4 @@
-package com.tencent.sparkwordcount
-
+package com.zhenyu.sparkwordcount
 
 import org.apache.spark.sql.types.StructType
 import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
