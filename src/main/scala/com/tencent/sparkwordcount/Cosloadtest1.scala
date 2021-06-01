@@ -19,7 +19,7 @@ object Cosloadtest1 {
       .getOrCreate()
 
     val sc: SparkContext = spark.sparkContext
-    val lines: RDD[String] = sc.textFile("D:\\data\\input\\qcloud_cos_forbid_log_bak_202006.txt")
+    val lines: RDD[String] = sc.textFile("D:\\data\\input\\log_bak_202006.txt")
     val rdd: RDD[CosLoad] = lines.map(_.split("\t")).map(x =>
       CosLoad(x(0), x(1), x(2), x(3), x(4), x(5), x(6), x(7), x(8), x(9), x(10), x(11), x(12),x(13))
     )
