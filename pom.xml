@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tencent</groupId>
+    <groupId>com.zhenyu</groupId>
     <artifactId>spark_scala</artifactId>
     <version>1.0</version>
     <properties>
@@ -156,7 +156,7 @@
                                     <resource>reference.conf</resource>
                                 </transformer>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.tencent.sparkwordcount.CosDict</mainClass> <!--main方法-->
+                                    <mainClass>com.zhenyu.sparkwordcount.CosDict</mainClass> <!--main方法-->
                                 </transformer>
                             </transformers>
                         </configuration>
